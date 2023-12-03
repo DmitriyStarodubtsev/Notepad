@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -18,6 +17,11 @@ namespace Notepad
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -110,7 +114,6 @@ namespace Notepad
             }
         }
 
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -118,12 +121,10 @@ namespace Notepad
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (frmAbout frm = new frmAbout())
+            using (Form2 frm = new Form2())
             {
                 frm.ShowDialog();
             }
         }
     }
 }
-
-

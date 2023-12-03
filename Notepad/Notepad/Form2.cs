@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Notepad
 {
-    public partial class frmAbout : Form
+    public partial class Form2 : Form
     {
-        public frmAbout()
+        public Form2()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace Notepad
             this.Close();
         }
 
-        private void frmAbout_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
             lblProductName.Text = string.Format("Product name: {0}", Application.ProductName);
             lblProductVersion.Text = string.Format("Version: {0}", Application.ProductVersion);
